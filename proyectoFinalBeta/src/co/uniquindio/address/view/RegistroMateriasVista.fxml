@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="420.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.address.view.ControladorRegistroMaterias">
+   <children>
+      <Label layoutX="49.0" layoutY="14.0" text="Registro" />
+      <GridPane layoutX="49.0" layoutY="56.0" prefHeight="221.0" prefWidth="271.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="157.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="114.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Numero de registro:" />
+            <Label text="Fecha:" GridPane.rowIndex="1" />
+            <Label text="Nombre del estudiante" GridPane.rowIndex="2" />
+            <Label text="Periodo de registro:" GridPane.rowIndex="3" />
+            <TextField fx:id="numeroRegistroTextField" GridPane.columnIndex="1" />
+            <TextField fx:id="fechaTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="nombreEstudianteTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="periodoRegistroTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button layoutX="40.0" layoutY="339.0" mnemonicParsing="false" onAction="#fijarRegistro" text="Guardar registro" />
+      <Button layoutX="221.0" layoutY="339.0" mnemonicParsing="false" onAction="#mostrarVentanaMateriasARegistrar" text="Registrar Materias" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+package cochedumbres;
+
+import javax.swing.JOptionPane;
+
+public class Punto1 {
+
+	public static void main(String[] args) {
+		
+		for(int i=0; i<10;i++) {
+			JOptionPane.showMessageDialog(null, "Hola");
+		}
+
+	}
+
+}

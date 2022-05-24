@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;Laboratorio&apos; to &apos;Recursividad/src&apos;&#x0D;&#x0A;- Original project: &apos;Lab_Recursividad&apos;&#x0D;&#x0A;- Destination element: &apos;Recursividad/src&apos;&#x0D;&#x0A;- Original element: &apos;Lab_Recursividad/src/Laboratorio&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=Recursividad/src" element1="/src&lt;Laboratorio" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1601424846060" version="1.0"/>
+</session>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.address.view.ControladorAsignatura">
+   <children>
+      <Label layoutX="84.0" layoutY="14.0" text="Ingrese los datos de la asignatura:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <GridPane layoutX="42.0" layoutY="88.0" prefHeight="303.0" prefWidth="467.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.0" minWidth="10.0" prefWidth="240.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="0.0" prefWidth="227.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Codigo:">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Nombre:" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label prefHeight="33.0" prefWidth="165.0" text="Numero de creditos:" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Intensidad horaria:" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Tipo de asignatura:" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Semestre actual:" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label text="Carrera a la que pertenece" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <TextField fx:id="codigoTextField" prefHeight="31.0" prefWidth="54.0" GridPane.columnIndex="1" />
+            <TextField fx:id="nombreTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="numeroDeCreditosTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="intensidadHorariaTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tipoDeAsignaturaTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="semestreActualTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="carreraPertenecienteTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button layoutX="61.0" layoutY="436.0" mnemonicParsing="false" onAction="#fijarAsignatura" prefHeight="42.0" prefWidth="171.0" text="Guardar asignatura" />
+      <Button layoutX="196.0" layoutY="522.0" mnemonicParsing="false" onAction="#mostrarVentanaCarrera" prefHeight="42.0" prefWidth="171.0" text="Agregar otra carrera" />
+      <Button layoutX="337.0" layoutY="436.0" mnemonicParsing="false" onAction="#mostrarVentanaProfesor" prefHeight="42.0" prefWidth="171.0" text="Agregar profesor" />
+   </children>
+</AnchorPane>

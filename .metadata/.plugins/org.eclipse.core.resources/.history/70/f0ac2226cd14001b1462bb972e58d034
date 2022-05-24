@@ -1,0 +1,65 @@
+package co.uniquindio.aerollinea.persistencia;
+
+import java.io.BufferedReader;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class ArchivoUtil {
+	
+	/**
+	 * Leer archivo
+	 * @param rutaArchivo
+	 * @return
+	 * @throws IOException
+	 */
+	public static ArrayList<String> cargarArchivo(String rutaArchivo) throws IOException{
+
+		ArrayList<String> contenido = new ArrayList<>();
+
+		FileReader fileReader = new FileReader(rutaArchivo);
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		String linea = "";
+
+		while ((linea = bufferedReader.readLine()) !=null) {
+
+			contenido.add(linea);
+		}
+
+
+		bufferedReader.close();
+		fileReader.close();
+
+		return contenido;
+	}
+
+
+
+	public static void guardarArchivo(String rutaArchivo, String contenido, boolean flagSobreescribir) throws IOException{
+
+		//Abrir Flujo
+		FileWriter fileWriter = new FileWriter(rutaArchivo, flagSobreescribir);
+		BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+		//Escribir
+		bufferedWriter.write(contenido);
+
+		//Cerrar
+		bufferedWriter.close();
+		fileWriter.close();
+
+
+	}
+
+
+
+	public static void escribirEnLog(String rutaArchivoLog, String nivel, String event) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+}

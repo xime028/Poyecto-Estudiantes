@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\eclipse-workspace3\Partido\src"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\eclipse-workspace3\Partido\nbproject"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\Partido\src"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\Partido"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\aerolinea"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\ultima vercion"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\heladito"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\Bloc"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\co.edu.uniquindio.aerollinea\src"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\co.edu.uniquindio.aerollinea\bin\co\edu\uniquindio\aerollinea"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\co.edu.uniquindio.aerollinea"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\eclipse-workspace3\Aerolinea"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\eclipse-workspace3\AplicacionBanco.zip"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\eclipse-workspace3\n3_avion"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\eclipse-workspace3\ParqueaderoModificadoFX"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\eclipse-workspace3\ParqueaderoJavaFX"/>
+		<item value="C:\Users\USUARIO WINDOWS\Downloads\ParqueaderoHerenciaJavaFX"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\Universidad\Programación 3\ParqueaderoHerenciaJavaFX"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\ProyectoFinal"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\proyectoFinalBeta"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\ProyectoFinalDefinitivo"/>
+		<item value="C:\Users\USUARIO WINDOWS\Desktop\ProyectoFinalEstudiantes"/>
+	</list>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="429"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\USUARIO WINDOWS\Downloads\Partido"/>
+			<item value="C:\Users\USUARIO WINDOWS\Downloads\Empresa\Empresa"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

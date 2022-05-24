@@ -1,0 +1,91 @@
+package co.edu.uniquindio.aerollinea.model;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+
+import co.edu.uniquindio.aerollinea.exceptions.PasajeroException;
+import co.edu.uniquindio.aerollinea.model.services.IModelServices;
+import co.uniquindio.aerollinea.persistencia.*;
+
+public class Aerolinea implements IModelServices {
+	private String nombre;
+	private Tiquete tiquete;
+	private Vuelo vuelo;
+	ArchivoUtil archivoUtil = new ArchivoUtil();
+	private ArrayList<String>archivoCargado = ArchivoUtil.cargarArchivo("C:\\td\\persistencia\\archivos");
+	private ArrayList<Pasajero>listaPasajeros = getPasajerosLista();
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public Tiquete getTiquete() {
+		return tiquete;
+	}
+	public void setTiquete(Tiquete tiquete) {
+		this.tiquete = tiquete;
+	}
+	public Vuelo getVuelo() {
+		return vuelo;
+	}
+	public void setVuelo(Vuelo vuelo) {
+		this.vuelo = vuelo;
+	}
+	public ArrayList<Pasajero> getListaPasajeros() {
+		return listaPasajeros;
+	}
+	public void setListaPasajeros(ArrayList<Pasajero> listaPasajeros) {
+		this.listaPasajeros = listaPasajeros;
+	}
+	public void crearPasajeroPasajero(String nombre, String apellido, String cedula, String ciudad, String telefono,
+			String fechaNacimiento) throws PasajeroException {
+		Pasajero nuevoPasajero= null;
+		Pasajero pasajeroExistente= obtenerPasajero(cedula);
+		if(pasajeroExistente != null) {
+			throw new PasajeroException("El empleado con numero de cedula "+cedula+" no se puede crear. Ya existe ");
+		}
+		else {
+		     nuevoPasajero = new Pasajero(nombre, apellido, cedula, ciudad, telefono, fechaNacimiento);
+				getListaPasajeros().add(nuevoPasajero);
+
+		}
+		
+		
+		
+		
+		}
+	@Override
+	public Pasajero obtenerPasajero(String cedula) {
+		// TODO Auto-generated method stub
+		Pasajero pasajeroEncontrado= null;
+		for(Pasajero pasajero : getListaPasajeros()) {
+			if(pasajero.getCedula().equalsIgnoreCase(cedula)) {
+				pasajeroEncontrado=pasajero;
+				break;
+			}
+		}
+		return pasajeroEncontrado;
+	}
+	
+	public ArrayList<Pasajero> getPasajerosLista() throws IOException{
+		ArrayList<String> archivoLeido = ArchivoUtil.cargarArchivo("C:\\td\\persistencia\\archivos");
+		ArrayList<Pasajero> pasajerosLista = new ArrayList<Pasajero>();
+		
+		for(String elemento : archivoLeido) {
+			String arrayElementos[] = elemento.split("@@");
+			Pasajero pasajeroNuevo = new Pasajero(arrayElementos[0], arrayElementos[1], arrayElementos[2], arrayElementos[3], 
+					arrayElementos[4], arrayElementos[5]);
+			
+			pasajerosLista.add(pasajeroNuevo);
+		}
+		return pasajerosLista;
+	}
+	
+	
+	
+
+}

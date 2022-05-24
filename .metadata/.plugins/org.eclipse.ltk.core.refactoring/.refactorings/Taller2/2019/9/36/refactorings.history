@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;GUI.java&apos; to &apos;Taller2/src/Vista&apos;&#x0D;&#x0A;- Original project: &apos;Taller2&apos;&#x0D;&#x0A;- Destination element: &apos;Taller2/src/Vista&apos;&#x0D;&#x0A;- Original element: &apos;Figuras.GUI.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;Vista" element1="/src&lt;Figuras{GUI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1567696750379" units="1" version="1.0"/>
+</session>

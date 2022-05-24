@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.address.view.ControladorFacultad">
+   <children>
+      <Label layoutX="161.0" layoutY="32.0" text="FACULTAD DE INGENIERIA" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="188.0" layoutY="155.0" mnemonicParsing="false" onAction="#mostrarVentanaCarrera" text="Administrativos" textAlignment="CENTER" />
+      <Button layoutX="201.0" layoutY="282.0" mnemonicParsing="false" onAction="#mostrarVistaEstudiante" text="Estudiantes" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

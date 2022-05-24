@@ -1,0 +1,41 @@
+package co.edu.uniquindio.aerollinea.aplicacion;
+
+import java.awt.EventQueue;
+import co.edu.uniquindio.aerollinea.controllers.ModelFactoryController;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import co.edu.uniquindio.aerollinea.exceptions.PasajeroException;
+import co.edu.uniquindio.aerollinea.model.Aerolinea;
+import co.edu.uniquindio.aerollinea.views.PasajeroView;
+import co.uniquindio.aerollinea.persistencia.ArchivoUtil;
+
+public class Aplicacion {
+	
+
+	
+	public static String listaArchivos() throws IOException {
+		ArchivoUtil archivo= new ArchivoUtil();
+	    ArrayList<String>lista=archivo.cargarArchivo("C:/td/persistencia/archivos/pasajeroArchivo.txt");
+	    return lista.get(0);
+	}
+
+	public static void main(String[] args) throws IOException, PasajeroException {
+		ModelFactoryController model=new ModelFactoryController();
+		model.crearPasajero("tntnt", "tntnt", "tntnt", "tntnt", "tntnt", "tntnt");
+		
+		
+		
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					PasajeroView window = new PasajeroView();
+					window.getFrmRegistroDelPasajero().setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+}

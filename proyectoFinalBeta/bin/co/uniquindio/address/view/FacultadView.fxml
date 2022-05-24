@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="508.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/fondo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="296.0" fitWidth="514.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/U.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="24.0" text="FACULTAD DE INGENIERÍA" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="142.0" layoutY="390.0" prefHeight="40.0" prefWidth="247.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" text="CARRERAS" />
+            <Button mnemonicParsing="false" text="ESTUDIANTE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
